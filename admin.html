@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <h2>Student Queries</h2>
+
+    {% for chat in chats %}
+        <p><b>User:</b> {{ chat.user_message }}</p>
+        <p><b>Bot:</b> {{ chat.bot_response }}</p>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
